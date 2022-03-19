@@ -117,16 +117,10 @@
   </svg>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-let id = 0
-export default defineComponent({
+<script lang="ts" setup>
+defineOptions({
   name: 'ImgEmpty',
-  setup() {
-    return {
-      id: ++id,
-    }
-  },
 })
+
+const id = Math.random()
 </script>
